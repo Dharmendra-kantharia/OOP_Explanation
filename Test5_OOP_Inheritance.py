@@ -1,4 +1,8 @@
 
+import Test1_OOP_concept # <-- To import other file variable in this file.
+# from Test1 import Person1 <-- If we want to import only one class from other file use this
+print(Test1_OOP_concept)
+
 # OOP Inheritance concept (Inheritance means we can use our parent class in other class)
 
 # Parent Class
