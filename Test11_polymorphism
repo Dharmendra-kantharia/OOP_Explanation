@@ -1,0 +1,22 @@
+# <--------Polymorphism----->
+# Means Differance behaviour , meaning same behavior change
+
+class ineuron:
+    def students(self):
+        print("Print a students details")
+
+class class_type:
+    def class_for_students(self):
+        print("Print the class type of class students")
+
+def ineuron_external(a):
+    a.students()
+
+i = ineuron()
+j = class_type()
+ineuron_external(i)
+
+def test(a,b):
+    return a+b
+print(test(3,4)) # <---Here you can see 3+4 = 7 output and same as below DharmendraKantharia output
+print(test("Dharmendra","Kanthria"))

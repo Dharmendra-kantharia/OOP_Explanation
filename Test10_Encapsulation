@@ -12,19 +12,25 @@ i.students()
 
 
 
+
+          #<----------------Encapsulation ----------> 
+# Encapsulation means You are not allowing to modify some one variable.
+
 class ineuron1:
     def __init__(self):
         self.__students1 = "Data science"
 
     def students(self):
         print(self.__students1)
-    def students_change(self):
-        self.__students1 = "Big data by Me" # <--- We created method to re-assign private variable
+    def students_change(self,new_value):
+        self.__students1 = new_value
+
+        #self.__students1 = "Big data by Me" # <--- We created method to re-assign private variable
 
 
 i1 = ineuron1()
 i1.students()
 i1.__students1 = "Big data" # <-- In case of private variable we can not re-assige or override any variable as we orver ride above. If we re-assigne any variable , need to create again class method.
 i1.students()
-i1.students_change()
+i1.students_change("Dharmendra")
 i1.students()
