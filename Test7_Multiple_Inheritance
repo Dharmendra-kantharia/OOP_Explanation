@@ -1,0 +1,34 @@
+# <-----------------Multiple Inheritance -------------->
+# Parent Class
+class Bank: 
+    def transcation(self):
+        print("Total transaction value")
+    def account_opening(self):
+        print("This will show you account open status")
+    def deposite(self):
+        print("This will show your deposited amount")
+    def test(self):#<-- Same method avialable in HDFC_Bank class 
+        print("This class test related to bank Class")  
+
+#Child Class
+class HDFC_bank: # <--- Call partent class in Child class
+    def hdfc_to_icici(self):
+        print("This will show you all the transaction happend to ICICI through HDFC")
+    def test(self):  #<-- Same method avialable in Bank class but when ever at the time of call a class if you call first Bank class then HDFC_Bank class accordigly object will print the statement        
+        print("This class test related to HDFC_Bank Class")
+
+class Ineron_Bank:
+    def account_status_ICICI(self):
+        print("This account status in ICICI")
+
+class ICICI(Bank,HDFC_bank,Ineron_Bank):# <--- Call HDFC and Bank class here becasue need to add method contain of both class Bank and HDFC class this is the reson it is multiple Inheritance
+    pass
+
+# Create object of ICICI class
+I = ICICI()
+I.hdfc_to_icici()
+I.deposite()
+I.account_opening()
+I.transcation()
+I.test()
+I.account_status_ICICI()

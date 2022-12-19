@@ -1,0 +1,12 @@
+# <-------- Abstraction -------->
+ # Abstraction means we are hidding any data behind some one.
+
+class ineuron:
+    __student = "Data science"
+
+    def student(self):
+        print("Print the class of student",ineuron.__student)
+
+i = ineuron()
+i.student()
+print(i._ineuron__student) # <----Here we are hidding student data

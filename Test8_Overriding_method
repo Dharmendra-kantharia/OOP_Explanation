@@ -1,0 +1,20 @@
+
+# <-------------Over riding method -------->
+
+class Ineuron:
+    def student(self):
+        print("print the details of all the student") # <----- Same method avialble in Ineuron_Vision class but whenever you update the print statement that class output you will get
+        # it means your statement overriding with parent class statement
+    def achivers(self):
+        print("print the list of all the achivers")
+    def hall_of_fame(self):
+        print("print the list of all the hall of fame")
+
+class Ineuron_vision(Ineuron):
+
+    def student(self):
+        print("These are the filters student list")# <----- Same method avialble in Ineuron_Vision class but whenever you update the print statement that class output you will get
+        # it means your statement overriding with parent class statement
+
+iv = Ineuron_vision()
+iv.student()

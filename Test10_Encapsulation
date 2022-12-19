@@ -1,0 +1,30 @@
+class ineuron:
+    def __init__(self):
+        self.students1 = "Data science"
+
+    def students(self):
+        print(self.students1)
+
+i = ineuron()
+i.students()
+i.students1 = "Data analytics" # <----Here we are overriding a "Student1" variable in runtime
+i.students()
+
+
+
+class ineuron1:
+    def __init__(self):
+        self.__students1 = "Data science"
+
+    def students(self):
+        print(self.__students1)
+    def students_change(self):
+        self.__students1 = "Big data by Me" # <--- We created method to re-assign private variable
+
+
+i1 = ineuron1()
+i1.students()
+i1.__students1 = "Big data" # <-- In case of private variable we can not re-assige or override any variable as we orver ride above. If we re-assigne any variable , need to create again class method.
+i1.students()
+i1.students_change()
+i1.students()
