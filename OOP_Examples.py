@@ -24,5 +24,12 @@ obj1 = Bus("School vachicle:volvo","Speed:180","Mileage:12")
 print(obj1.name,obj1.max_speed,obj1.mileage)
 print(obj.seating_capacity(50))
 
+# Exercise 4: Class Inheritance
 
+class Bus(vehicle):
+    def seating_capacity(self,capacity = 55):
+        return super().seating_capacity(capacity=55)
+
+school_bus = Bus("School volvo",180,20)
+print(school_bus.seating_capacity())
 
